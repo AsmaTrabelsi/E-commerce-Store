@@ -1,6 +1,9 @@
 ﻿using API.Data;
+using API.Dtos;
+using AutoMapper;
 using Core.Entities;
 using Core.Interfaces;
+using Core.Specification;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,39 +13,54 @@ namespace API.Controllers
     [Route("api/[controller]")]
     public class ProductController : Controller
     {
-        private readonly IProductRepository productRepository; 
-        public ProductController(IProductRepository productRepository)
+        private readonly IGenericRepository<Product> productRepo;
+        private readonly IGenericRepository<ProductBrand> brandRepo;
+        private readonly IGenericRepository<ProductType> typesRepo;
+        private readonly IMapper mapper;
+
+
+        public ProductController(IGenericRepository<Product> productRepo
+            , IGenericRepository<ProductBrand> brandRepo,
+            IGenericRepository<ProductType> typesRepo,
+            IMapper mapper)
         {
-            this.productRepository = productRepository;
+            this.productRepo = productRepo;
+            this.brandRepo = brandRepo;
+            this.typesRepo = typesRepo;
+            this.mapper = mapper;
         }
         [HttpGet]
-        public async Task<ActionResult<List<Product>>> GetProducts()
+        public async Task<ActionResult<IReadOnlyList<Product>>> GetProducts()
         {
-            var products = await  productRepository.GetAllProductsAsync();
-            return Ok(products);
+            var spec = new ProductWithTypesAndBrandsSpecification();
+            var products = await  productRepo.ListAsync(spec);
+            return Ok(mapper.Map<IReadOnlyList<Product>,IReadOnlyList<ProductToReturn>>(products));
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Product>> GetProduct(int id)
         {
-            var product= await productRepository.GetProductAsync(id);
+            var spec = new ProductWithTypesAndBrandsSpecification(id);
+
+            var product = await productRepo.GetEntityWithSpec(spec);
+
             if (product == null)
             {
                 return NotFound();
             }
-            return Ok(product);
+            return Ok(mapper.Map<Product,ProductToReturn>(product));
         }
 
         [HttpGet("brands")]
         public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetProductBrands()
         {
-            return Ok(await productRepository.GetAllProductBrandsAsync());
+            return Ok(await brandRepo.GetAllAsync());
         }
 
         [HttpGet("types")]
         public async Task<ActionResult<IReadOnlyList<ProductType>>> GetProductTypes()
         {
-            return Ok(await productRepository.GetAllProductTypesAsync());
+            return Ok(await typesRepo.GetAllAsync());
            
         }
     }

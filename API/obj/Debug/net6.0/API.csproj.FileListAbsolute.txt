@@ -65,3 +65,6 @@ C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\Infrastructure.dl
 C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\Infrastructure.pdb
 C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\Core.pdb
 C:\Users\hj137AG\Angular\e-commerce-store\API\obj\Debug\net6.0\API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\API.staticwebassets.runtime.json

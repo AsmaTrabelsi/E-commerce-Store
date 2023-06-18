@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "qlwzKWg2kZAZe3vmexnidS1PhgLOJwVJyw8mATvTdWlUTqzTDlrX+MeKy8E2mvYCJzPoui6ktgQ9w7AriTCXSw==",
+  "dgSpecHash": "O6L1y2qfP9iWrXqiQ1n/14GB3saBcMH1JUVSVjoMtOcA2VsVO0lTyJ7HL4sxznnMjJ6VWP77LiNWz9TVYIjOUA==",
   "success": true,
   "projectFilePath": "C:\\Users\\hj137AG\\Angular\\e-commerce-store\\API\\API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\hj137AG\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\hj137AG\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\hj137AG\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\hj137AG\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\hj137AG\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.18\\microsoft.data.sqlite.core.6.0.18.nupkg.sha512",
     "C:\\Users\\hj137AG\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.18\\microsoft.entityframeworkcore.6.0.18.nupkg.sha512",
     "C:\\Users\\hj137AG\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.18\\microsoft.entityframeworkcore.abstractions.6.0.18.nupkg.sha512",
