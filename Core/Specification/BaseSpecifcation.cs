@@ -9,16 +9,17 @@ using System.Threading.Tasks;
 namespace Infrastructure.Data.Specification
 {
 
-    public class BaseSpecifcation<T> : ISpecification<T>
+    public class BaseSpecification<T> : ISpecification<T>
     {
-        public BaseSpecifcation()
+        public BaseSpecification()
         {
+        }
 
-        }
-        public BaseSpecifcation(Expression<Func<T, bool>> Criteria)
+        public BaseSpecification(Expression<Func<T, bool>> criteria)
         {
-            Criteria = Criteria;
+            Criteria = criteria;
         }
+
         public Expression<Func<T, bool>> Criteria { get; }
 
         public List<Expression<Func<T, object>>> Includes { get; } =
@@ -55,6 +56,6 @@ namespace Infrastructure.Data.Specification
             Take = take;
             IsPagingEnabled = true;
         }
-   
+
     }
 }

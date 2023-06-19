@@ -3,7 +3,7 @@ using Infrastructure.Data.Specification;
 
 namespace Core.Specifications
 {
-    public class ProductsWithTypesAndBrandsSpecification : BaseSpecifcation<Product>
+    public class ProductsWithTypesAndBrandsSpecification : BaseSpecification<Product>
     {
         public ProductsWithTypesAndBrandsSpecification(ProductSpecParams productParams)
             : base(x =>
