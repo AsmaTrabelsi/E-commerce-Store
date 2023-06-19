@@ -1,17 +1,11 @@
 ﻿using Core.Entities;
-using Core.Specifications;
 using Infrastructure.Data.Specification;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Core.Specification
+namespace Core.Specifications
 {
-    public class ProductWithTypesAndBrandsSpecification : BaseSpecifcation<Product>
+    public class ProductsWithTypesAndBrandsSpecification : BaseSpecifcation<Product>
     {
-        public ProductWithTypesAndBrandsSpecification(ProductSpecParams productParams)
+        public ProductsWithTypesAndBrandsSpecification(ProductSpecParams productParams)
             : base(x =>
             (string.IsNullOrEmpty(productParams.Search) || x.Name.ToLower().Contains(productParams.Search)) &&
             (!productParams.BrandId.HasValue || x.ProductBrandId == productParams.BrandId) &&
@@ -40,12 +34,11 @@ namespace Core.Specification
                 }
             }
         }
-        public ProductWithTypesAndBrandsSpecification(int id) : base(x => x.Id == id)
+
+        public ProductsWithTypesAndBrandsSpecification(int id) : base(x => x.Id == id)
         {
             AddInclude(x => x.productType);
             AddInclude(x => x.ProductBrand);
         }
-
-
     }
 }

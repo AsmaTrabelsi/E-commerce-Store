@@ -1,7 +1,7 @@
 ﻿using API.Data;
 using Core.Entities;
 using Core.Interfaces;
-using Core.Specification;
+using Core.Specifications;
 using Infrastructure.Data.Specification;
 using Microsoft.EntityFrameworkCore;
 
