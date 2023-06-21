@@ -68,3 +68,5 @@ C:\Users\hj137AG\Angular\e-commerce-store\API\obj\Debug\net6.0\API.MvcApplicatio
 C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\API.staticwebassets.runtime.json
+C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\StackExchange.Redis.dll
