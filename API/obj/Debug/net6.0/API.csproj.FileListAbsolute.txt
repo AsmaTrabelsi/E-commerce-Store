@@ -70,3 +70,17 @@ C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\AutoMapper.Extens
 C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\API.staticwebassets.runtime.json
 C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\Pipelines.Sockets.Unofficial.dll
 C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\StackExchange.Redis.dll
+C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\hj137AG\Angular\e-commerce-store\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
